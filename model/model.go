@@ -45,10 +45,10 @@ func (my *MyStruct) CreateDatabaseInfo() *MyStruct {
 }
 
 func ReadDatabaseInfos() *[]MyStruct {
-	var infos []MyStruct
+	var infos *[]MyStruct
 	configs.Database.Find(&infos)
 
-	return &infos
+	return infos
 }
 
 func (my *MyStruct) UpdateDatabaseInfo() *MyStruct {
