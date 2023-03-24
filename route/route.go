@@ -20,6 +20,7 @@ func URL() {
 
 	// controller.go
 	ginRouter.GET("/begin", controller.BeginDatabase)
+
 	ginRouter.POST("/create", controller.CreateDatabase)
 	ginRouter.GET("/read", controller.ReadDatabase)
 	ginRouter.PUT("/update/:id", controller.UpdateDatabase)
